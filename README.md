@@ -10,7 +10,7 @@ I am a clear and engaging communicator, with over 10 years’ experience in educ
 ### About me
 - 🔭 I’m currently working on using Google Earth Engine to track changing rural electrification.
 - 🌱 I’m currently learning ALOT - including TypeScript
-- 📫 How to reach me: DM right here
+- 📫 How to reach me: russell.vinegar@gmail.com
 - 😄 Pronouns: him/his
 - ⚡ Fun fact: My last name really is Vinegar
 
