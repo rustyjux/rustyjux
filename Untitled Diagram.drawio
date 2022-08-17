@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-17T16:44:56.388Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="ZYeyeU1iBamHOvDb7k59" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-17T16:55:18.291Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="MlhGL6vsOpFadnhfo53m" version="20.2.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="2249" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -56,6 +56,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="MSuP2Gb16X77tuDf0hlv-3" value="Caslys &amp;lt;&amp;gt; F, Ag" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;verticalAlign=bottom;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="ueiq7wPYFO3_b5HzsMcq-11" target="MSuP2Gb16X77tuDf0hlv-2">
+          <mxGeometry x="0.1429" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-380" y="260" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="ueiq7wPYFO3_b5HzsMcq-11" value="Caslys over-rides" style="whiteSpace=wrap;html=1;rounded=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-440" y="290" width="120" height="60" as="geometry" />
         </mxCell>
@@ -93,11 +101,11 @@
         <mxCell id="u6n3ilZ5qnTQI06MdBP8-13" value="Agriculture" style="whiteSpace=wrap;html=1;rounded=1;labelBackgroundColor=none;fillColor=#fff2cc;strokeColor=#d6b656;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-260" y="500" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="u6n3ilZ5qnTQI06MdBP8-17" value="Human Disturbance" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="u6n3ilZ5qnTQI06MdBP8-17" value="Disturbed" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-260" y="680" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="u6n3ilZ5qnTQI06MdBP8-21" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Should shrubby alpine be &#39;Alpine&#39; or AC 1?&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;labelBackgroundColor=none;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-140" y="290" width="120" height="130" as="geometry" />
+          <mxGeometry x="-120" y="455" width="120" height="130" as="geometry" />
         </mxCell>
         <mxCell id="u6n3ilZ5qnTQI06MdBP8-22" value="&lt;br&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;*Should NRCAN urban/ag override VRI?&lt;/span&gt;&lt;br&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;labelBackgroundColor=none;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-800" y="440" width="120" height="90" as="geometry" />
@@ -122,6 +130,12 @@
         </mxCell>
         <mxCell id="MSuP2Gb16X77tuDf0hlv-1" value="Age Class 1" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#8EE8A0;strokeColor=#82b366;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-270" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MSuP2Gb16X77tuDf0hlv-2" value="" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-270" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="MSuP2Gb16X77tuDf0hlv-4" value="&lt;br&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;*Urban / Tree mosiac - how to class?&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;labelBackgroundColor=none;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="-130" y="200" width="120" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
