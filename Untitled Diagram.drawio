@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-18T14:54:57.006Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="5W7q-ytBzd_qq_oDZ-4s" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-18T20:07:53.633Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="cZDG1J4OjpY5m9YX1Qdw" version="20.2.4" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1865" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2580" dy="721" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -123,16 +123,13 @@
         <mxCell id="u6n3ilZ5qnTQI06MdBP8-21" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Should shrubby alpine be &#39;Alpine&#39; or AC 1?&lt;br&gt;--&amp;gt; Alpine&lt;br&gt;therefore, use NRCAN to convert to shrub first, THEN use CE to reclass to alpine (overwriting AC 1)&lt;br&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;labelBackgroundColor=none;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-120" y="410" width="120" height="175" as="geometry" />
         </mxCell>
-        <mxCell id="u6n3ilZ5qnTQI06MdBP8-22" value="&lt;br&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;*Should NRCAN urban/ag override VRI?&lt;br&gt;&lt;/span&gt;YES" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;labelBackgroundColor=none;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="-800" y="440" width="120" height="110" as="geometry" />
-        </mxCell>
         <mxCell id="u6n3ilZ5qnTQI06MdBP8-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="u6n3ilZ5qnTQI06MdBP8-24" target="u6n3ilZ5qnTQI06MdBP8-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="u6n3ilZ5qnTQI06MdBP8-24" value="&lt;br&gt;Try out this classification! What sort of areas are missed?" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;labelBackgroundColor=none;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="u6n3ilZ5qnTQI06MdBP8-24" value="What sort of areas are missed?" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;labelBackgroundColor=none;fillColor=#f8cecc;strokeColor=#b85450;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-550" y="740" width="120" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="u6n3ilZ5qnTQI06MdBP8-25" value="Natural disturbance areas?" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="u6n3ilZ5qnTQI06MdBP8-25" value="Some natural disturbance areas in the alpine" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;labelBackgroundColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="-400" y="800" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="MSuP2Gb16X77tuDf0hlv-0" value="Caslys = F&lt;br&gt;+ AGE = NULL" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;verticalAlign=bottom;labelPosition=right;verticalLabelPosition=top;align=left;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="MSuP2Gb16X77tuDf0hlv-1" edge="1">
