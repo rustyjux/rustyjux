@@ -1,0 +1,14 @@
+Install Log 2022-09-12:18:22:44.32
+Downloading GeoServer binary
+Download complete
+Uninstall previous versions
+Uninstalled
+Extracting GeoServer binary
+Archive extracted
+Setting environment variables
+
+SUCCESS: Specified value was saved.
+
+SUCCESS: Specified value was saved.
+Installation complete
+-
