@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>how-to.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="7-hacks-to-level-up-your-ago-game---esri-developers-hate-this----omit-in-toc">7 Hacks to Level Up your AGO Game - ESRI Developers Hate This! <!-- omit in toc --></h1>
+<p>Prepared by: South Coast GIS Team<br>
+Date: Nov 2022</p>
+<ul>
+<li><a href="#emoji-and-icons-in-apps-eb-db">Emoji and Icons in Apps (EB, DB)</a></li>
+</ul>
+<h1 id="emoji-and-icons-in-apps-eb-db">Emoji and Icons in Apps (EB, DB)</h1>
+<!-- no toc -->
+<ul>
+<li><a href="#got-text-add-an-emoji">Got text? Add an emoji</a>
+<ul>
+<li><a href="#sidenote-are-emoji-accessible">Are emoji accessible?</a></li>
+</ul>
+</li>
+<li><a href="#custom-icons-in-dashboard">Custom icons in Dashboard</a>
+<ul>
+<li><a href="#can-i-use-custom-point-symbols-on-a-map">Can I use custom point symbols on a map?</a></li>
+</ul>
+</li>
+</ul>
+<p>Icons (including emoji) provide more options for communicating information to your audience. They can be a quick visual aid to reinforce an idea presented in text, or a concise way to add additional meaning without words.</p>
+<hr>
+<h2 id="got-text-add-an-emoji">Got text? Add an emoji</h2>
+<p>Apologies to those who cringe immediately at the sign of an emoji. Good news for the irreverent - it is incredibly easy to incorporate emoji almost anywhere you have text in AGO.</p>
+<p>Here I used the construction symbol 🚧 to show pages that hadn't yet been developed:</p>
+<p><img src="img/construction-emoji.png" alt="construction symbol" title="🚧 used to show pages not yet developed"></p>
+<p>In most cases, using an emoji is as easy as typing - on Windows 10+, <strong>simply press the Windows logo key <img src="img/windows-logo.png" width="15em"> + period (.)</strong> to open the emoji panel, start typing a search term, and hit enter or click on the emoji you want. Or Google and copy and paste.</p>
+<p>To add the emoji in the menu shown above, I just typed them in as the page title in Experience Builder, using the windows emoji panel:</p>
+<p><img src="img/emoji-EB.png" alt=""></p>
+<p>Other fun (and potentially useful) spots to include emoji are in titles, chart legends, or indicators. Really the only limit is your creativity. Sometimes, emoji let us mimic symbols that might normally be added with JavaScript, like the ➕ on this tab label to show it can be expanded:</p>
+<p><img src="img/plus-tab.png" alt="plus menu" title="➕ next to the tab label to show it can be expanded"></p>
+<p>⚠ One important caution - Emoji appearance <a href="https://thedavidbarton.github.io/blog/os-dependent-emoji-display/">varies across platforms</a>. Chances are it will still get the same message across, but the colour or general aesthetic could vary greatly.</p>
+<hr>
+<h3 id="are-emoji-accessible">Are emoji accessible?</h3>
+<p>Yes, but only when used properly. Screen readers will read out the name of the emoji (e.g. &quot;Fire&quot;, &quot;Face with Tears of Joy&quot;, or &quot;Thumbs Up Sign&quot;).</p>
+<p>So what's the problem? Imagine how this would sound: 🍕🍕🍕😋🎉🎉🎉</p>
+<p>This post on the <a href="https://blog.easterseals.com/emojis-and-accessibility-the-dos-and-donts-of-including-emojis-in-texts-and-emails/">Easterseals blog</a> gives a few tips:</p>
+<ul>
+<li>don't repeat emoji over and over</li>
+<li>keep the total number of emoji limited</li>
+<li>put the important information before the emoji so it's more likely to be heard (tough one for me)</li>
+</ul>
+<hr>
+<h2 id="custom-icons-in-dashboard">Custom icons in Dashboard</h2>
+<p>Esri gives the option to <a href="https://doc.arcgis.com/en/dashboards/latest/create-and-share/use-custom-icons.htm">add SVG icons</a> in indicators, headers, selectors, and tables in Dashboards. For example, in this Dashboard header bar, I used custom icons to help the user to recognize the two groups of filters ('selectors' officially) - Area and Project:</p>
+<p><img src="img/icon-filters.png" alt="icon filters" title="Using icons in an AGO Dashboard selector to support text"></p>
+<p>Here, icons add style and clarity to the indicators:</p>
+<p><img src="img/icon-indicator.png" alt="fish indicators" title="Icons showing the subject of each indicator"></p>
+<p>Icon settings will be found somewhere in the element configuration. In the case of a Category selector go to Configure &gt; Selector &gt; Icon &gt; Change &gt; Custom</p>
+<p><img src="img/custom-icon.png" alt="custom icon" title="Custom icon settings"></p>
+<p>Let's say I want to change the icon here to something else. Esri tells us &quot;SVG icons are an XML-based vector image format and can be created in any text editor or using drawing software.&quot; And while you could technically type out an SVG in notepad - I'd suggest finding an existing SVG online.</p>
+<p>Try a Google image search for '<em>your interest here</em> icon' or check out Google's <a href="https://fonts.google.com/icons">Material Symbols</a> library. Take note of any image licensing. Once you've found an icon you like - I'll use this <a href="https://fonts.google.com/icons?selected=Material+Symbols+Outlined:crop:FILL@0;wght@400;GRAD@0;opsz@48">crop icon</a> <img src="img/crop.svg" alt="crop"> - look around for a 'SVG download' button and save that file.</p>
+<p>Then, open the file in your web browser, and right click &gt; View page source to see the SVG code. It will look something like:</p>
+<pre class="hljs"><code><div>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; height=&quot;48&quot; width=&quot;48&quot;&gt;&lt;path d=&quot;M34.75 46v-8.25h-21.5q-1.2 0-2.1-.9-.9-.9-.9-2.1v-21.5H2v-3h8.25V2h3v32.75H46v3h-8.25V46Zm0-14.25v-18.5h-18.5v-3h18.5q1.2 0 2.1.9.9.9.9 2.1v18.5Z&quot;/&gt;&lt;/svg&gt;
+</div></code></pre>
+<p>Then simply copy all that and paste it into the SVG Code box in the element settings in Dashboard and tada - a new custom icon:</p>
+<p><img src="img/new-icon-indicator.png" alt=""></p>
+<hr>
+<h3 id="can-i-use-custom-point-symbols-on-a-map">Can I use custom point symbols on a map?</h3>
+<p>Often the map is the star of the show, so naturally you'd want custom icons there. Sadly, the feature to do this online still hasn't made it from <a href="https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/using-images-as-custom-point-symbols/">Map Viewer Classic</a> into Map Viewer.</p>
+<p>Esri has added <a href="https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/do-more-with-symbols-in-map-viewer-beta/">vector symbols</a> to Map Viewer and custom icons can be <a href="https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/use-published-2d-symbols-in-arcgis-online/">exported as a Web Style</a> from ArcGIS Pro.</p>
+<p>However, vector symbols come with this spooky warning:</p>
+<p><img src="img/symbol-warning.png" alt=""></p>
+<p>The <a href="https://www.esri.com/arcgis-blog/products/arcgis-online/mapping/do-more-with-symbols-in-map-viewer-beta/">blog post</a> doesn't go into much depth, but these symbols work with the ArcGIS API for Javascript version 4.x, which includes Dashboards and Experience Builder. Notably, these symbols wont work with Web AppBuilder.</p>
+
+</body>
+</html>
