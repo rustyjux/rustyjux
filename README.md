@@ -1,7 +1,7 @@
 ## Russell Vinegar
 
 ### Profile
-Soon to graduate from the Advanced Diploma in GIS program at 
+Recent graduate from the Advanced Diploma in GIS program at 
 Selkirk College, I am diving head-first into the geospatial industry. I am a perpetual learner and problem solver, eager to apply technology to solve challenges big and small.
 
 My skillset is centered around Esri software (+ArcPy), in addition to QGIS, ENVI, and FME. I am interested in machine learning and cloud-native geospatial. To that end, I am growing my expertise with Google Earth Engine, TypeScript, and TensorFlow.
